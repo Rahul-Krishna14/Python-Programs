@@ -1,15 +1,28 @@
-### hacker rank solutions for python
+### SIMPLE CALCULATOR
 
-### for infy.py use the following code to convert from larger case to smaller case
-  ```python
-  def cap(x):
-    l = ''
-    for i in x:
-        if i == ' ':
-            l = l + ' '
-        elif ord(i) >= 65 and ord(i) <= 90:
-            a = ord(i) + 32
-            l = l + chr(a)
-    print(l)
-  ```
-  
+### OPRATIONS PERFORMED:
+* Addition 
+* subtration
+* multiplication
+* division
+
+#### IMPLEMENTATION
+```python
+class Calculator:
+
+    def __init__(self, a, b):
+        self.a = float(a)
+        self.b = float(b)
+
+    def addition(self):
+        return self.a + self.b
+
+    def subtraction(self):
+        return self.a - self.b
+
+    def multiplication(self):
+        return self.a * self.b
+
+    def division(self):
+        return self.a / self.b
+```
